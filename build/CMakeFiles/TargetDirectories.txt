@@ -1,0 +1,3 @@
+C:/Users/Aarzo/OneDrive/Pictures/doraemon/Documents/Desktop/Wildchain/build/CMakeFiles/Wildchain.dir
+C:/Users/Aarzo/OneDrive/Pictures/doraemon/Documents/Desktop/Wildchain/build/CMakeFiles/edit_cache.dir
+C:/Users/Aarzo/OneDrive/Pictures/doraemon/Documents/Desktop/Wildchain/build/CMakeFiles/rebuild_cache.dir

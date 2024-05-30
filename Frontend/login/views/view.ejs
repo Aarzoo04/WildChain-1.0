@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tiger Data</title>
+</head>
+<body>
+    <h1>View Tiger Data</h1>
+    <form action="/view" method="POST">
+        <label for="tiger_id">Enter Tiger ID:</label>
+        <input type="text" id="tiger_id" name="tiger_id" required>
+        <button type="submit">View Data</button>
+    </form> 
+    <style>
+      .small-image {
+        max-width: 600px;
+        max-height: 600px;
+      }
+    </style>
+
+    <% if (typeof tiger !== 'undefined' && tiger) { %>
+      <h2>Tiger Details</h2>
+      <p>Tiger ID: <%= tiger.tiger_id %></p>
+      <p>Location: <%= tiger.location %></p>
+      <p>Timestamp: <%= tiger.timestamp %></p>
+      <img src ="../uploads/<%= tiger.image %>" alt="Tiger Image" class="small-image">
+  <% } else { %>
+      <p>No tiger data found</p>
+  <% } %>
+  
+</body>
+</html>
